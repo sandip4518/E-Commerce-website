@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Stores</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-----------header-------->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="LO-.png" alt="logo" width="130">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="btn"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="btn"><a href="product.html"><i class="fa fa-box"></i> Products</a></li>
+                        <li class="btn"><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+                        <li class="btn"><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                        <li class="btn"><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+                    </ul>
+                </nav>
+            
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout <br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency.
+                        Consistent <br>hard work gains success. Greatness will come.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="run.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Featured Products-------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="p-1.jpg" alt="Red Printed T-Shirt">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;50.0</p>
+                <button class="cart-btn" onclick="addToCart('Red Printed T-Shirt', 50)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-2.jpg" alt="Shoes">
+                <h4>Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;100.0</p>
+                <button class="cart-btn" onclick="addToCart('Shoes', 100)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-3.jpg" alt="Watch">
+                <h4>Watch</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>&#8377;110.0</p>
+                <button class="cart-btn" onclick="addToCart('Watch', 110)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-4.jpg" alt="T-Shirt">
+                <h4>T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;75.0</p>
+                <button class="cart-btn" onclick="addToCart('T-Shirt', 75)">Add to Cart</button>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="p-5.jpg" alt="Analoug Watch">
+                <h4>Analoug Watch</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;150.0</p>
+                <button class="cart-btn" onclick="addToCart('Analoug Watch', 150)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-6.jpg" alt="Casual Shoes">
+                <h4>Casual Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;70.0</p>
+                <button class="cart-btn" onclick="addToCart('Casual Shoes', 70)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-7.jpg" alt="Watch">
+                <h4>Watch</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>&#8377;80.0</p>
+                <button class="cart-btn" onclick="addToCart('Watch', 80)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-8.jpg" alt="Formal Pant">
+                <h4>Formal Pant</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;110.0</p>
+                <button class="cart-btn" onclick="addToCart('Formal Pant', 110)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="p-9.jpg" alt="Shorts">
+                <h4>Shorts</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;40.0</p>
+                <button class="cart-btn" onclick="addToCart('Shorts', 40)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-10.jpg" alt="Pant">
+                <h4>Pant</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;90.0</p>
+                <button class="cart-btn" onclick="addToCart('Pant', 90)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-11.jpg" alt="Smart Watch">
+                <h4>Smart Watch</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+                <p>&#8377;120.0</p>
+                <button class="cart-btn" onclick="addToCart('Smart Watch', 120)">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="p-12.jpg" alt="White Shoes">
+                <h4>White Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>&#8377;220.0</p>
+                <button class="cart-btn" onclick="addToCart('White Shoest', 220)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cart Items Section -->
+        <div id="cart-items"></div>
+
+        <!-- Clear Cart Button -->
+        <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <!-----------Footer-------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <div class="app-logo">
+                        <a href="https://www.playstore.com" target="blank"><img src="playstore.png"></a>
+                        <p>Download App for Android mobile phone.</p>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="LO-.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href="coupons.html"><li>Coupons</li></a>
+                        <a href="About.html"><li>About Us</li></a>
+                        <a href="Return_policy.html"><li>Return Policy</li></a>
+                        <a href="Affiliate.html"><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fab fa-twitter"></i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            <hr>
+            <p class="copyright">Copyright © 2023 - Sandy Store</p>
+        </div>
+    </div>
+    <!-----------JS for Toggle Menu and Cart-------->
+    <script src="script.js"></script>
+</body>
+</html>
